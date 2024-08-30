@@ -1,0 +1,92 @@
+
+/*reset básico*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/*Estilos do cabeçalho do site*/
+
+header {
+    background-image: -moz-linear-gradient(left, black, grey, lightgrey);
+    color: rgb(35, 63, 70);
+    padding: 1rem;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: blue;
+    text-decoration: none;
+}
+
+#linkstyle {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#timao {
+
+    text-align: right;
+    width: 110px;
+}
+
+/* Estilo de conteúdo principal */
+
+main {
+    padding: 1rem;
+}
+
+.secao1 {
+    background: beige;
+    padding: 1rem;
+    text-align: center;
+    font-size: 25px;
+}
+
+.secao2 {
+    background: lightslategrey;
+    padding: 1rem;
+    text-align: center;
+    font-size: 25px;
+}
+
+/* Estilos de rodapé */
+footer {
+    background: grey;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Media queries para dispositivos móveis */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    article {
+        flex: 1 1 100%;
+    }
+}
